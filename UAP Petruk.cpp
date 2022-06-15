@@ -71,4 +71,5 @@ int main(){
 		system("cls");
 		
 	}while(pilM != 5);
+	return 0;
 }
