@@ -48,7 +48,7 @@ int main(){
 		    	cout<< " Lagu tidak Tersedia "<<endl;
 			}else{
 			song.push(list[save-1]); 
-			cout<<song.front()<<" Telah Ditambahkan "<<endl;
+			cout<<list[save-1]<<" Telah Ditambahkan "<<endl;
 		}
 			break;
 		case 2 : print(song); ;
