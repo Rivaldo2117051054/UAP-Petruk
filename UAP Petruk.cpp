@@ -29,7 +29,27 @@ int main(){
 	cout<<"\n Pilih : ";
 	cin>>pilM;
 	
-	
+	switch(pilM){
+		case 1 : cout<<" Pilih Music : ";cin>>save;
+		    if(save>7){
+		    	cout<< " Lagu tidak Tersedia "<<endl;
+			}else{
+			song.push(list[save-1]); 
+			cout<<song.front()<<" Telah Ditambahkan "<<endl;
+		}
+			break;
+		case 2 : print(song); ;
+			 break;
+		case 3 : cout<<" Jumlah music : "<<song.size()<<endl ;
+			 break;
+		case 4 : cout<<song.front()<<" Dimainkan "; song.pop();
+			break;
+		}
+		
+		cout<<endl;
+		
+		system("pause");
+		system("cls");
 		
 	}while(pilM != 5);
 }
