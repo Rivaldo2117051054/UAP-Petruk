@@ -55,7 +55,13 @@ int main(){
 			 break;
 		case 3 : cout<<" Jumlah music : "<<song.size()<<endl ;
 			 break;
-		case 4 : cout<<song.front()<<" Dimainkan "; song.pop();
+		case 4 : if(song.empty()){
+		cout<<" Music Kosong ";
+	}
+		else{
+			cout<<song.front()<<" Dimainkan";
+			song.pop();
+		} 
 			break;
 		}
 		
