@@ -16,6 +16,19 @@ void Pilihan (string list[]){
 		cout<<" "<<i+1<<"."<<list[i]<<endl;
 	}
 }
+void print(queue <string> song){
+cout<<"\n Playlist music :"<<endl;
+
+if(song.empty()){
+cout<<" Music Kosong ";
+}
+while(!song.empty()){
+
+cout<<">"<<song.front()<<endl;
+
+song.pop();
+}
+}
 
 int main(){
 
